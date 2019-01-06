@@ -7,8 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
 
 public class FreeCRMLogin {
 
@@ -35,11 +33,11 @@ public class FreeCRMLogin {
 		driver.switchTo().frame("mainpanel");
 		
 //		This one we can click because it a button
-//		Thread.sleep(3000);
-//		List<WebElement> list= driver.findElements(By.cssSelector(".noprint a[title='Call List']"));
-//		
-//		list.get(1).click();
-//		
+		Thread.sleep(3000);
+		List<WebElement> list= driver.findElements(By.cssSelector(".noprint a[title='Call List']"));
+		
+		list.get(1).click();
+		
 		
 //		 Not available because this one available on list first you have to click on list then drop down will come then 
 //		 you can click on it.
