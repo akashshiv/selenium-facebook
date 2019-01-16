@@ -28,13 +28,14 @@ public class FreeCRMLogin {
 		driver.findElement(By.cssSelector(".navbar-form .form-control[name='password']")).sendKeys("Selenium@12345");
 		
 		Thread.sleep(3000);
+	
 		
 		driver.findElement(By.cssSelector(".input-group-btn .btn.btn-small")).click();
 		
 		Thread.sleep(3000);
 		driver.switchTo().frame("mainpanel");
 		
-//		This one we can click because it a button
+//	    This one we can click because it a button
 		Thread.sleep(3000);
 		List<WebElement> list= driver.findElements(By.cssSelector(".noprint a[title='Call List']"));
 		
