@@ -49,11 +49,11 @@ public class FluentWaitDemo {
 		WebElement clicks= wait.until(new Function<WebDriver, WebElement>(){
 			
 			public WebElement apply(WebDriver driver ) {
+				System.out.println("hello");
 				return driver.findElement(By.cssSelector(".a4bIc .gLFyf.gsfi1"));
 			}
 		});
 		
-		clicks.click();
 	}
 
 }
